@@ -1,10 +1,10 @@
 node('built-in') 
 {
-    stage('Continuous Download_loan') 
+    stage('Continuous Download_loans') 
 	{
     git 'https://github.com/yankils/hello-world.git'
 	}
-    stage('Continuous Build_loan') 
+    stage('Continuous Build_loans') 
 	{
     sh label: '', script: 'mvn package'
 	}
